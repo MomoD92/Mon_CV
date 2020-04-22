@@ -1,4 +1,7 @@
-/* @font-face */
+              /* Mise en forme de la page */
+
+/* la police:@font-face */
+
 @font-face {
     font-family: 'tanohe_sansregular';
     src: url('font/tanohesans-regular-webfont.woff2') format('woff2'),
@@ -13,40 +16,64 @@
     font-weight: normal;
     font-style: normal;
 }
-/* FIN */
 
-/* body */
+/* Stylage des caractères */
+
 body{
-    margin: 0;
-    background-color: #E6E6E6;
+    background-color: rgb(154, 176, 194);          /* couleur de fond */
+    font-size: 1em;
+    font-family:'playfair_display_scregular';        /* la police */
+    display: flex;                                   /*  flexbox  */
+    justify-content: center;                         /* aligner au centre */                                      
+    width: 85vw;                                     /* la largeur de la page */
+    flex-wrap: wrap;                                 /* retour à la ligne des bloc s'il y'a plus d'espace */
+}
+
+aside{
+    background-color:#3A75A9;        /* Couleur de fond */
+    width: 15vw;                       /* la largeur de 217 px */
+    font-size: 1em;                    /* la taille du texte */
+    display: flex;                     /* utiliser flexbox pour l'alignement */
+    flex-direction: column;            /* disposer sur la colonne */
+    justify-content: flex start;       /* aligner au début */
+    padding-left:0;                    /* la marge intérieur */
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 11.9vw;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+aside p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.section_gauche{
+    background-color: white;
     display: flex;
     justify-content: center;
+    margin-left:0;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+    height: 4vh;
+    margin-top: 0;
+    font-size: 1em;
 }
-/* FIN body*/
-
-/* header */
- header {
-      font-family: "caviar_dreamsregular";
-      display: flex;
-      flex-direction: row;
-      width:77vw;
-      height: 40vh;
-      background-color: #3A75A9;
-      
+header{
+    display: flex;                    /* flexbox */
+    flex-direction: row;              /* disposition horizontale */
+    width: 64.4vw;                    /* la largeur de 835.44 px */
+    height: 35vh;                     /* la hauteur de 208 px */
+    padding-left:4.5vw;                /* la marge intérieur de 67 px */
+    background-color:#3A75A9 ;
+    margin-left: 12vw;
 }
 header h1{
-    font-size: 3em;
-    line-height: 2px;
-    text-transform: uppercase;
-    height:8vh;
-    display: flex;
-    align-items: center;
-    margin:0;
-}
-header h3{
-    font-family: arial,sans-serif;
-    font-weight: normal;
-    text-transform: none;
+    height: 8vh;                      /* la hauteur du titre principal */
 }
 header h3 span{
 
@@ -55,81 +82,77 @@ header h3 span{
     text-decoration-color:#FFFFFF;
     font-size: 1em;
 }
-header div:nth-child(2){
-    width:55vw;
-    padding-left:3vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+header div{
+    display: flex;                    /* On utilise flexbox */
+    flex-direction: column;           /* disposition au niveau de la colonne */
+    justify-content: center;          /* alignement au centre */
+    width: 55vw;                      /* avec une largeur */
+    padding-left: 8vw;                /* une marge intérieure à gauche */
 }
 figure{
-    width: 21vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex;                    /* flexbox */
+    flex-direction: column;           /* sur la colonne */
+    justify-content: center;          /* au centre */
+    width: 20vw;                      /* avec une largeur */
+    margin-left: 0;                   /* la marge exterieur nulle */
+}
+figure img{
+    border-radius: 50%;               /* bordure arrondie de 50% */
+    box-shadow:6px 6px 6px black;   /* avec une décalage horizontale,verticale avec adoucissement et la couleur noir de l'ombre */
+    border: 10px #FFFFFF double;    /* une taille de 10px couleur blanc doublée */
 }
 figure a{
     height: 160px;
     width: 180px;
 }
-figure img{
-    border-radius: 50%;
-    box-shadow:6px 6px 6px black;
-    border: 10px #FFFFFF double;
-    height: 160px;
-    width: 150px;
-}
-/* FIN header*/
-
-/* main */
 main{
-    max-width: 80vw;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #FFFFFF;      /* couleur de fond */
+    display: flex;                    /* flexbox */
+    flex-direction: column;           /* disposition colonne */
+    width: 51vw;                      /* une largeur */
+    padding-left: 2.8vw;               /* une marge intérieure */
 }
-.bandeau{
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    height: 6vh;
-    text-transform: uppercase;
+.section_milieu{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+
+}
+.section_milieu p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
-    margin: 0;
-    background-color: white;
 }
-aside{
-    display: flex;
-    font-size: 0.9em;
-    width: 20vw;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    background-color: #3A75A9;
-    
+#formation,#experience{
+    width: 50vw;
+    margin-bottom: 5vh;
 }
-aside div{
-    list-style-type:none;
-    line-height:0.2em;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display:flex;
-    flex-direction: column;
-    height: auto;
+#expériences{
+    width: 50vw;
+    margin-bottom: 5vh;
+} 
+.section_milieu i{
+    padding-right: 40px;
 }
-aside article:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
+
+.section_milieu span{
+    width: 15vw;
+    font-size: 0.8em;
 }
-aside article:nth-child(2) p{
-    line-height: 1em;
+.section_milieu h4{
+     margin-top: 0.8em;
+     font-weight: normal;
+     font-size: 1em;
+}
+.section_milieu div{
+    width: 100%;
     text-align: justify;
-    margin: 20px;
+    line-height: 1em;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+.sectionMilieu h3{
+    text-transform: uppercase;
+    margin: 0;
 }
 .titles{
 
@@ -138,105 +161,70 @@ aside article:nth-child(2) p{
     align-items: center;
     border-bottom: 2px solid;
     border-bottom-color: rgb(10, 10, 10);
-    font-family: "caviar_dreamsregular";
     text-transform: uppercase; 
     margin-bottom: 30px;
 }
-a{
-    color: black;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-/* FIN main */
-
-/* section */
-section{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    width: 55vw;
-    padding-left: 2vw;
-}
-#formation,#experience{
-    width: 50vw;
-    margin-bottom: 5vh;
-}
-.sectionMilieu{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-.sectionMilieu i{
-    padding-right: 40px;
-}
-.sectionMilieu span:nth-child(2){
-    width: 15vw;
-    font-size: 0.8em;
-}
-.sectionMilieu h3{
-    text-transform: uppercase;
-    margin: 0;
-    font-family: "caviar_dreamsitalic";
-}
-.sectionMilieu h4{
-    margin-top: 0.8em;
-    font-weight: normal;
-    font-size: 1em;
-    font-family: Arial, sans-serif;
-}
-.sectionMilieu span:nth-child(3){
-    width: 100%;
-    text-align: justify;
-    line-height: 1em;
-    font-size: 0.8em;
-    margin-bottom: 20px;
-}
-/* FIN section */
-
-/* footer */
 footer{
-    background-color:#3A75A9;
-    display: flex;
-    justify-content: flex-start;
-    width: 77vw;
-    font-family: arial,sans-serif;
-}
-footer article:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-ul{
-    justify-content: space-between;
-    align-items: center;
-    line-height: 1em;
-    font-size: 0.9em;
-    text-transform: none;
-    margin-bottom: 5vh;
+    background-color:#3A75A9;       /* la couleur de fond */
+    display: flex;                    /* flexbox */
+    justify-content: flex-start;      /* aligner au début */                     
+    width:68.7vw;                       /*  avec une largeur width: 982px; */
+    padding-left: 0;               /* une marge intérieure gauche*/
+    margin-left: 12.1vw;
 }
 footer article:first-child{
-    display:flex;
+    width: 15.6vw;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 20vw;
-}
-footer article:first-child .fas{
-    font-size: 2em;
-    border: 2px white solid;
-    padding: 10px;
-    border-radius: 50%;
-    /*color: white;*/
+    padding-right: 0;                 
+    margin-left: 0;
+    margin-right: 0;
 }
 footer article:first-child div{
-    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-/* FIN footer */
+footer article:first-child .fas{
+     font-size: 2em;
+     border: 2px white solid;
+     border-radius: 50%;
+     padding: 6px;
+}
+.Certifications{
+    background-color: white;
+    display: flex;                     /* flexbox */
+    flex-direction: column;            /* disposition en colonne */
+    width: 53.5vw;                     /* la largeur de la section */
+    padding-left: 2vw;                 /* une marge intérieure gauche */
+    padding-right: 1vw;                /* une marge intérieure droite */
+    justify-content: center;
+    margin-left: 0;
+}
+
+/* Responsive Design */
+
+ @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+
+    /* Appareils avec une résolution en-dessous de 991px  et au dessus de 768 px */
+    
+        body{
+            background-color:rgb(154, 176, 194) ;
+        }
+
+        main{
+            min-width: 52vw;
+            margin-left: 12vw;
+        }
+
+        header{
+            width:50vw;
+        }
+        aside{
+            width: 55vw;
+        }
+        footer{
+            width:55vw ;
+        }
+    }
