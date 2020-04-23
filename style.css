@@ -25,22 +25,18 @@ body{
     font-family:'playfair_display_scregular';        /* la police */
     display: flex;                                   /*  flexbox  */
     justify-content: center;                         /* aligner au centre */                                      
-    width: 85vw;                                     /* la largeur de la page */
+    width: 85%;                                      /* la largeur de la page */
     flex-wrap: wrap;                                 /* retour à la ligne des bloc s'il y'a plus d'espace */
+    margin: auto;
 }
 
 aside{
     background-color:#3A75A9;        /* Couleur de fond */
-    width: 15vw;                       /* la largeur de 217 px */
+    width: 25%;                        /* la largeur de 217 px */
     font-size: 1em;                    /* la taille du texte */
     display: flex;                     /* utiliser flexbox pour l'alignement */
     flex-direction: column;            /* disposer sur la colonne */
-    justify-content: flex start;       /* aligner au début */
-    padding-left:0;                    /* la marge intérieur */
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 11.9vw;
+    justify-content: flex start;       /* aligner au début */   
 }
 a{
     color: black;
@@ -51,29 +47,45 @@ a:hover{
 }
 aside p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 10px;
+}
+aside div{
+    display:flex;
+    flex-direction: column;
+    line-height: 0.2em;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+aside h3{
+    display:block;
+    font-size: 1.17em;
+    font-weight: bold;
+    padding: 10px 10px;
 }
 .section_gauche{
     background-color: white;
     display: flex;
     justify-content: center;
-    margin-left:0;
     border-top: 3px solid #FFFFFF;
     border-bottom: 3px solid #FFFFFF;
     height: 4vh;
-    margin-top: 0;
     font-size: 1em;
+    margin-top: auto;
+    color: #3A75A9;
 }
 header{
     display: flex;                    /* flexbox */
     flex-direction: row;              /* disposition horizontale */
-    width: 64.4vw;                    /* la largeur de 835.44 px */
-    height: 35vh;                     /* la hauteur de 208 px */
-    padding-left:4.5vw;                /* la marge intérieur de 67 px */
+    width: 95%;                    /* la largeur de 835.44 px */
+    height: 40vh;                     /* la hauteur de 208 px */
     background-color:#3A75A9 ;
-    margin-left: 12vw;
 }
 header h1{
     height: 8vh;                      /* la hauteur du titre principal */
+}
+header h1 span{
+    color: #FFFFFF;
 }
 header h3 span{
 
@@ -86,15 +98,14 @@ header div{
     display: flex;                    /* On utilise flexbox */
     flex-direction: column;           /* disposition au niveau de la colonne */
     justify-content: center;          /* alignement au centre */
-    width: 55vw;                      /* avec une largeur */
-    padding-left: 8vw;                /* une marge intérieure à gauche */
+    width: 75%;                      /* avec une largeur */
+    padding-left: 3vw;                /* une marge intérieure à gauche */
 }
 figure{
     display: flex;                    /* flexbox */
     flex-direction: column;           /* sur la colonne */
     justify-content: center;          /* au centre */
-    width: 20vw;                      /* avec une largeur */
-    margin-left: 0;                   /* la marge exterieur nulle */
+    width: 17%;                      /* avec une largeur */
 }
 figure img{
     border-radius: 50%;               /* bordure arrondie de 50% */
@@ -109,8 +120,7 @@ main{
     background-color: #FFFFFF;      /* couleur de fond */
     display: flex;                    /* flexbox */
     flex-direction: column;           /* disposition colonne */
-    width: 51vw;                      /* une largeur */
-    padding-left: 2.8vw;               /* une marge intérieure */
+    width: 70%;                      /* une largeur */
 }
 .section_milieu{
     display: flex;
@@ -122,16 +132,19 @@ main{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
 }
-#formation,#experience{
-    width: 50vw;
+#formation,#expériences{
+    width: 95%;
     margin-bottom: 5vh;
+    padding-left: 20px;
 }
-#expériences{
-    width: 50vw;
+#compétences{
+    width: 95%;
     margin-bottom: 5vh;
+    padding-left: 20px;
 } 
 .section_milieu i{
     padding-right: 40px;
+    color: #3A75A9;
 }
 
 .section_milieu span{
@@ -160,26 +173,26 @@ main{
     display: flex;
     align-items: center;
     border-bottom: 2px solid;
-    border-bottom-color: rgb(10, 10, 10);
+    border-bottom-color: #3A75A9;
     text-transform: uppercase; 
     margin-bottom: 30px;
 }
+.fas{
+    color:#3A75A9;
+    padding-right: 20px;
+}
+
 footer{
     background-color:#3A75A9;       /* la couleur de fond */
     display: flex;                    /* flexbox */
     justify-content: flex-start;      /* aligner au début */                     
-    width:68.7vw;                       /*  avec une largeur width: 982px; */
-    padding-left: 0;               /* une marge intérieure gauche*/
-    margin-left: 12.1vw;
+    width:95%;                        /*  avec une largeur */
 }
 footer article:first-child{
-    width: 15.6vw;
+    width: 26.4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 0;                 
-    margin-left: 0;
-    margin-right: 0;
 }
 footer article:first-child div{
     display: flex;
@@ -191,40 +204,95 @@ footer article:first-child .fas{
      border: 2px white solid;
      border-radius: 50%;
      padding: 6px;
+     color: #FFFFFF;
 }
 .Certifications{
     background-color: white;
     display: flex;                     /* flexbox */
     flex-direction: column;            /* disposition en colonne */
-    width: 53.5vw;                     /* la largeur de la section */
-    padding-left: 2vw;                 /* une marge intérieure gauche */
-    padding-right: 1vw;                /* une marge intérieure droite */
+    width: 72%;                      /* la largeur de la section */
     justify-content: center;
-    margin-left: 0;
+    padding-left: 20px;
+}
+ul {
+  list-style-type: none;
 }
 
 /* Responsive Design */
 
- @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+ @media screen and (max-width:1083px) and (orientation:portrait){
 
-    /* Appareils avec une résolution en-dessous de 991px  et au dessus de 768 px */
+    /* Appareils avec une résolution en-dessous de 1083px */
     
         body{
-            background-color:rgb(154, 176, 194) ;
+            width: 100%;
         }
 
         main{
-            min-width: 52vw;
-            margin-left: 12vw;
+            width:100% ;
         }
 
         header{
-            width:50vw;
+            width:100%;
+        }
+        figure a {
+            height: 160px;
+            width: 180px;
+            display: flex;
+            align-items: flex-end;
         }
         aside{
-            width: 55vw;
+            width: 100%;
+        
         }
         footer{
-            width:55vw ;
+            width:100% ;
         }
     }
+@media  screen and (max-width: 981px) and (orientation:landscape){
+
+    body{
+        width: 100%;
+    }
+
+    main{
+        width:100% ;
+    }
+
+    header{
+        width:100%;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        width: 17%;
+    }
+    figure a {
+        height: 160px;
+        width: 180px;
+        display: flex;
+        align-items: flex-end;
+    }
+    aside{
+        width: 100%;
+    }
+    aside div{
+            display: flex;
+            flex-direction: row;
+            line-height: 0.2em;
+            padding: 10px;
+            margin-bottom: 10px;
+            height: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            margin: auto;
+            font-size: x-small;
+        
+    }
+    footer{
+        width:100% ;
+    }
+}
