@@ -33,7 +33,7 @@ body{
 aside{
     background-color:#3A75A9;        /* Couleur de fond */
     width: 25%;                        /* la largeur de 217 px */
-    font-size: 1em;                    /* la taille du texte */
+    font-size: 0.8em;                    /* la taille du texte */
     display: flex;                     /* utiliser flexbox pour l'alignement */
     flex-direction: column;            /* disposer sur la colonne */
     justify-content: flex start;       /* aligner au début */   
@@ -49,13 +49,17 @@ aside p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 10px;
 }
-aside div{
+ul{
     display:flex;
     flex-direction: column;
     line-height: 0.2em;
+    list-style-type: none;
     padding-left: 10px;
-    margin-bottom: 10px;
-    height: auto;
+}
+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 aside h3{
     display:block;
@@ -122,14 +126,14 @@ main{
     flex-direction: column;           /* disposition colonne */
     width: 70%;                      /* une largeur */
 }
-.section_milieu{
+#section_milieu{
     display: flex;
     align-items: baseline;
     justify-content: center;
 
 }
-.section_milieu p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#section_milieu p{
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
 }
 #formation,#expériences{
@@ -142,28 +146,28 @@ main{
     margin-bottom: 5vh;
     padding-left: 20px;
 } 
-.section_milieu i{
+#section_milieu i{
     padding-right: 40px;
     color: #3A75A9;
 }
 
-.section_milieu span{
+#section_milieu span{
     width: 15vw;
     font-size: 0.8em;
 }
-.section_milieu h4{
+#section_milieu p{
      margin-top: 0.8em;
      font-weight: normal;
      font-size: 1em;
 }
-.section_milieu div{
+#section_milieu div{
     width: 100%;
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
     margin-bottom: 20px;
 }
-.sectionMilieu h3{
+#sectionMilieu h3{
     text-transform: uppercase;
     margin: 0;
 }
@@ -213,10 +217,9 @@ footer article:first-child .fas{
     width: 72%;                      /* la largeur de la section */
     justify-content: center;
     padding-left: 20px;
+    font-size: 1em;
 }
-ul {
-  list-style-type: none;
-}
+
 
 /* Responsive Design */
 
@@ -278,7 +281,7 @@ ul {
     aside{
         width: 100%;
     }
-    aside div{
+         ul{
             display: flex;
             flex-direction: row;
             line-height: 0.2em;
