@@ -68,106 +68,106 @@ aside h3{
     padding: 10px 10px;
 }
 .section_gauche{
-    background-color: white;
+    background-color: #000000;
     display: flex;
     justify-content: center;
-    border-top: 3px solid #FFFFFF;
-    border-bottom: 3px solid #FFFFFF;
-    height: 4vh;
-    font-size: 1em;
-    margin-top: auto;
     color: #3A75A9;
 }
 header{
     display: flex;                    /* flexbox */
     flex-direction: row;              /* disposition horizontale */
-    width: 95%;                    /* la largeur de 835.44 px */
-    height: 40vh;                     /* la hauteur de 208 px */
+    width: 100%;                    /* la largeur de 835.44 px */
+    height: 200px;                     /* la hauteur de 208 px */
     background-color:#3A75A9 ;
 }
 header h1{
     height: 8vh;                      /* la hauteur du titre principal */
+    padding-left: 3vw;
 }
+header h3{
+    padding-left: 3vw;
+}
+
 header h1 span{
-    color: #FFFFFF;
+    color: #3A75A9;
 }
 header h3 span{
 
     text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color:#FFFFFF;
+    text-decoration-color:#3A75A9;
     font-size: 1em;
+    text-underline-position: under;
 }
 header div{
     display: flex;                    /* On utilise flexbox */
     flex-direction: column;           /* disposition au niveau de la colonne */
     justify-content: center;          /* alignement au centre */
-    width: 75%;                      /* avec une largeur */
-    padding-left: 3vw;                /* une marge intérieure à gauche */
+    width: 75%;                      /* avec une largeur */               
+    background-color: #FFFFFF;
 }
 figure{
     display: flex;                    /* flexbox */
     flex-direction: column;           /* sur la colonne */
     justify-content: center;          /* au centre */
-    width: 17%;                      /* avec une largeur */
+    width: 25%;                      /* avec une largeur */
+    background-color:#3A75A9;
+    margin:0;
 }
 figure img{
-    border-radius: 50%;               /* bordure arrondie de 50% */
-    box-shadow:6px 6px 6px black;   /* avec une décalage horizontale,verticale avec adoucissement et la couleur noir de l'ombre */
-    border: 10px #FFFFFF double;    /* une taille de 10px couleur blanc doublée */
+    border-radius: 50%;               /* bordure arrondie de 50% */   
+    margin: 30px;  
 }
 figure a{
-    height: 160px;
-    width: 180px;
+    height: 178px;
+    width: 170px;
+    margin: auto;
 }
 main{
     background-color: #FFFFFF;      /* couleur de fond */
     display: flex;                    /* flexbox */
     flex-direction: column;           /* disposition colonne */
-    width: 70%;                      /* une largeur */
+    width: 75%;                       /* une largeur */
 }
-#section_milieu{
+.section_milieu{
     display: flex;
     align-items: baseline;
     justify-content: center;
 
 }
-#section_milieu p{
+.section_milieu p{
     font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
 }
 #formation,#expériences{
-    width: 95%;
-    margin-bottom: 5vh;
-    padding-left: 20px;
+    width: 87%;
+    padding-left: 3vw;
 }
 #compétences{
-    width: 95%;
-    margin-bottom: 5vh;
-    padding-left: 20px;
+    width: 87%;
+    padding-left: 3vw;
 } 
-#section_milieu i{
+.section_milieu i{
     padding-right: 40px;
     color: #3A75A9;
 }
 
-#section_milieu span{
+.section_milieu span{
     width: 15vw;
     font-size: 0.8em;
 }
-#section_milieu p{
+.section_milieu p{
      margin-top: 0.8em;
      font-weight: normal;
      font-size: 1em;
 }
-#section_milieu div{
+.section_milieu div{
     width: 100%;
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
     margin-bottom: 20px;
 }
-#sectionMilieu h3{
+.sectionMilieu h3{
     text-transform: uppercase;
     margin: 0;
 }
@@ -185,18 +185,24 @@ main{
     color:#3A75A9;
     padding-right: 20px;
 }
-
+.fa-circle{
+    font-size: x-small;
+}
+.far{
+    font-size: x-small;
+}
 footer{
-    background-color:#3A75A9;       /* la couleur de fond */
+    background-color:#FFFFFF;       /* la couleur de fond */
     display: flex;                    /* flexbox */
     justify-content: flex-start;      /* aligner au début */                     
-    width:95%;                        /*  avec une largeur */
+    width:100%;                       /*  avec une largeur */
 }
 footer article:first-child{
-    width: 26.4%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color:#3A75A9;
 }
 footer article:first-child div{
     display: flex;
@@ -205,20 +211,21 @@ footer article:first-child div{
 }
 footer article:first-child .fas{
      font-size: 2em;
-     border: 2px white solid;
+     border: 2px solid;
      border-radius: 50%;
      padding: 6px;
-     color: #FFFFFF;
+     color: #000000;
 }
 .Certifications{
     background-color: white;
     display: flex;                     /* flexbox */
     flex-direction: column;            /* disposition en colonne */
-    width: 72%;                      /* la largeur de la section */
+    width: 65%;                        /* la largeur de la section */
     justify-content: center;
-    padding-left: 20px;
     font-size: 1em;
+    padding-left: 3vw;
 }
+
 
 
 /* Responsive Design */
@@ -237,21 +244,68 @@ footer article:first-child .fas{
 
         header{
             width:100%;
-        }
-        figure a {
-            height: 160px;
-            width: 180px;
-            display: flex;
-            align-items: flex-end;
-        }
-        aside{
-            width: 100%;
-        
-        }
-        footer{
-            width:100% ;
-        }
+            flex-wrap: wrap;
+            margin: 0;
+            padding-bottom: 8vh;
+            font-size: 0.6em;
+            line-height: 0.5em;
+       }
+       figure{
+        display: flex;                    
+        flex-direction: column;           
+        justify-content: center;          
+        width: 100%;                      
+        background-color:#3A75A9;
+        align-items: center;
+        margin: 0;
     }
+       header h1{
+           height: 3vh;
+       }
+       header div{
+        display: flex;                    
+        width: 100%;                                      
+        flex-direction: column;           
+        justify-content: center;          
+        background-color: #FFFFFF;
+        align-items: center;
+        }
+       aside{
+           width: 100%;
+       }
+       footer{
+           width: 100%;
+           flex-wrap: wrap;
+       }
+       
+       footer article:first-child .fas{
+        border: 2px solid;
+        border-radius: 50%;
+        padding: 6px;
+        margin: 10px;
+       }
+      footer article:first-child{
+        width: 100%;
+       }
+      .section_gauche{
+        margin: 0;
+       }
+       .Certifications{
+          width: 100%;
+          background-color: white;
+          display: flex;                                           
+          justify-content: center;
+          font-size: 0.6em;
+          padding-left: 3vw;
+       }
+       li{
+           text-align: center;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+        
+}
 @media  screen and (max-width: 981px) and (orientation:landscape){
 
     body{
@@ -261,41 +315,67 @@ footer article:first-child .fas{
     main{
         width:100% ;
     }
-
     header{
         width:100%;
+        flex-wrap: wrap;
+        margin: 0;
+        padding-bottom: 8vh;
+        font-size: 0.6em;
+        line-height: 0.5em;
+   }
+   figure{
+    display: flex;                    
+    flex-direction: column;           
+    justify-content: center;          
+    width: 100%;                      
+    background-color:#3A75A9;
+    align-items: center;
+    margin: 0;
+   }
+   header h1{
+       height: 3vh;
+   }
+   header div{
+    display: flex;                    
+    width: 100%;                                      
+    flex-direction: column;           
+    justify-content: center;          
+    background-color: #FFFFFF;
+    align-items: center;
     }
-    figure {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: baseline;
-        width: 17%;
-    }
-    figure a {
-        height: 160px;
-        width: 180px;
-        display: flex;
-        align-items: flex-end;
-    }
-    aside{
-        width: 100%;
-    }
-         ul{
-            display: flex;
-            flex-direction: row;
-            line-height: 0.2em;
-            padding: 10px;
-            margin-bottom: 10px;
-            height: auto;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: baseline;
-            margin: auto;
-            font-size: x-small;
-        
-    }
-    footer{
-        width:100% ;
-    }
+   aside{
+       width: 100%;
+   }
+   footer{
+    width: 100%;
+    flex-wrap: wrap;
+   }
+
+   footer article:first-child .fas{
+   border: 2px solid;
+   border-radius: 50%;
+   padding: 6px;
+   margin: 10px;
+  }
+  footer article:first-child{
+  width: 100%;
+  }
+  .section_gauche{
+  margin: 0;
+  }
+  .Certifications{
+    width: 100%;
+    background-color: white;
+    display: flex;                                           
+    justify-content: center;
+    font-size: 0.6em;
+    padding-left: 3vw;
+  }
+   li{
+       text-align: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
 }
