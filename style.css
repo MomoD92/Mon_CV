@@ -22,7 +22,7 @@
 body{
     background-color: rgb(154, 176, 194);          /* couleur de fond */
     font-size: 1em;
-    font-family:'playfair_display_scregular';        /* la police */
+    font-family: 'playfair_display_scregular';      /* la police */
     display: flex;                                   /*  flexbox  */
     justify-content: center;                         /* aligner au centre */                                      
     width: 85%;                                      /* la largeur de la page */
@@ -36,7 +36,7 @@ aside{
     font-size: 0.8em;                    /* la taille du texte */
     display: flex;                     /* utiliser flexbox pour l'alignement */
     flex-direction: column;            /* disposer sur la colonne */
-    justify-content: flex start;       /* aligner au début */   
+    justify-content: flex-start;       /* aligner au début */   
 }
 a{
     color: black;
@@ -149,6 +149,7 @@ main{
 .section_milieu i{
     padding-right: 40px;
     color: #3A75A9;
+    font-size: 0.1em;
 }
 
 .section_milieu span{
@@ -186,10 +187,10 @@ main{
     padding-right: 20px;
 }
 .fa-circle{
-    font-size: x-small;
+    font-size: xx-small;
 }
 .far{
-    font-size: x-small;
+    font-size: xx-small;
 }
 footer{
     background-color:#FFFFFF;       /* la couleur de fond */
@@ -229,10 +230,9 @@ footer article:first-child .fas{
 
 
 /* Responsive Design */
+@media screen and (max-width:830px){
 
- @media screen and (max-width:1083px) and (orientation:portrait){
-
-    /* Appareils avec une résolution en-dessous de 1083px */
+    /* Appareils avec une résolution en-dessous de 768px */
     
         body{
             width: 100%;
@@ -240,6 +240,9 @@ footer article:first-child .fas{
 
         main{
             width:100% ;
+        }
+        h4{
+            font-size: 0.8em;
         }
 
         header{
@@ -249,6 +252,11 @@ footer article:first-child .fas{
             padding-bottom: 8vh;
             font-size: 0.6em;
             line-height: 0.5em;
+       }
+       header h3{
+           text-align: center;
+           margin-top: 0;
+           font-size: 2em;
        }
        figure{
         display: flex;                    
@@ -272,10 +280,32 @@ footer article:first-child .fas{
         }
        aside{
            width: 100%;
+           display: flex;
+           flex-direction: row;
+           
        }
+       aside article{
+           width: 50%;
+       }
+       aside h3{
+           display: block;
+           font-size: 1.17em;
+           font-weight: bold;
+           padding: 5px 10px;
+       }
+       ul{
+        display:flex;
+        flex-direction: column;
+        line-height: 0.2em;
+        list-style-type: none;
+        padding-left: 10px;
+        margin: auto;
+      }
+     
        footer{
            width: 100%;
            flex-wrap: wrap;
+           flex-direction: column-reverse;
        }
        
        footer article:first-child .fas{
@@ -295,87 +325,154 @@ footer article:first-child .fas{
           background-color: white;
           display: flex;                                           
           justify-content: center;
-          font-size: 0.6em;
+          font-size: 0.9em;
           padding-left: 3vw;
        }
        li{
-           text-align: center;
-           padding-top: 10px;
-           padding-bottom: 10px;
+           padding-top: 0;
+           padding-bottom: 0;
            font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
        }
-        
+       .titles{
+
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid;
+        border-bottom-color: #3A75A9;
+        text-transform: uppercase; 
+        margin-bottom: 0px;
+    }
+    .Certifications ul{
+        line-height: 1.2em;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+    }
+       
 }
-@media  screen and (max-width: 981px) and (orientation:landscape){
+@media screen and (max-width:768px) and (orientation:portrait){
 
-    body{
-        width: 100%;
-    }
+    /* Appareils avec une résolution en-dessous de 1083px */
+    
+        body{
+            width: 100%;
+        }
 
-    main{
-        width:100% ;
-    }
-    header{
-        width:100%;
-        flex-wrap: wrap;
+        main{
+            width:100% ;
+        }
+        h4{
+            font-size: 0.8em;
+        }
+
+        header{
+            width:100%;
+            flex-wrap: wrap;
+            margin: 0;
+            padding-bottom: 8vh;
+            font-size: 0.6em;
+            line-height: 0.5em;
+       }
+       header h3{
+           text-align: center;
+           margin-top: 0;
+           font-size: 2em;
+       }
+       figure{
+        display: flex;                    
+        flex-direction: column;           
+        justify-content: center;          
+        width: 100%;                      
+        background-color:#3A75A9;
+        align-items: center;
         margin: 0;
-        padding-bottom: 8vh;
-        font-size: 0.6em;
-        line-height: 0.5em;
-   }
-   figure{
-    display: flex;                    
-    flex-direction: column;           
-    justify-content: center;          
-    width: 100%;                      
-    background-color:#3A75A9;
-    align-items: center;
-    margin: 0;
-   }
-   header h1{
-       height: 3vh;
-   }
-   header div{
-    display: flex;                    
-    width: 100%;                                      
-    flex-direction: column;           
-    justify-content: center;          
-    background-color: #FFFFFF;
-    align-items: center;
     }
-   aside{
-       width: 100%;
-   }
-   footer{
-    width: 100%;
-    flex-wrap: wrap;
-   }
+       header h1{
+           height: 3vh;
+       }
+       header div{
+        display: flex;                    
+        width: 100%;                                      
+        flex-direction: column;           
+        justify-content: center;          
+        background-color: #FFFFFF;
+        align-items: center;
+        }
+       aside{
+           width: 100%;
+           display: flex;
+           flex-direction: row;
+           
+       }
+       aside article{
+           width: 50%;
+       }
+       aside h3{
+           display: block;
+           font-size: 1.17em;
+           font-weight: bold;
+           padding: 5px 10px;
+       }
+       ul{
+        display:flex;
+        flex-direction: column;
+        line-height: 0.2em;
+        list-style-type: none;
+        padding-left: 10px;
+        margin: auto;
+      }
+     
+       footer{
+           width: 100%;
+           flex-wrap: wrap;
+           flex-direction: column-reverse;
+       }
+       
+       footer article:first-child .fas{
+        border: 2px solid;
+        border-radius: 50%;
+        padding: 6px;
+        margin: 10px;
+       }
+      footer article:first-child{
+        width: 100%;
+       }
+      .section_gauche{
+        margin: 0;
+       }
+       .Certifications{
+          width: 100%;
+          background-color: white;
+          display: flex;                                           
+          justify-content: center;
+          font-size: 0.9em;
+          padding-left: 3vw;
+       }
+       li{
+           padding-top: 0;
+           padding-bottom: 0;
+           font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+       .titles{
 
-   footer article:first-child .fas{
-   border: 2px solid;
-   border-radius: 50%;
-   padding: 6px;
-   margin: 10px;
-  }
-  footer article:first-child{
-  width: 100%;
-  }
-  .section_gauche{
-  margin: 0;
-  }
-  .Certifications{
-    width: 100%;
-    background-color: white;
-    display: flex;                                           
-    justify-content: center;
-    font-size: 0.6em;
-    padding-left: 3vw;
-  }
-   li{
-       text-align: center;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   }
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid;
+        border-bottom-color: #3A75A9;
+        text-transform: uppercase; 
+        margin-bottom: 0px;
+    }
+    .Certifications ul{
+        line-height: 1.2em;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
 
+    }
+       
 }
+
+ 
