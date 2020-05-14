@@ -149,7 +149,6 @@ main{
 .section_milieu i{
     padding-right: 40px;
     color: #3A75A9;
-    font-size: 0.1em;
 }
 
 .section_milieu span{
@@ -185,12 +184,14 @@ main{
 .fas{
     color:#3A75A9;
     padding-right: 20px;
+    font-size: 1em;
+
 }
 .fa-circle{
-    font-size: xx-small;
+    font-size: 0.1em;
 }
-.far{
-    font-size: small;
+.fa-dot-circle{
+    font-size: 0.9em;
 }
 footer{
     background-color:#FFFFFF;       /* la couleur de fond */
