@@ -84,14 +84,14 @@ header h1{
     height: 8vh;                      /* la hauteur du titre principal */
     padding-left: 3vw;
 }
-header h3{
+header h2{
     padding-left: 3vw;
 }
 
 header h1 span{
     color: #3A75A9;
 }
-header h3 span{
+header h2 span{
 
     text-decoration-line: underline;
     text-decoration-color:#3A75A9;
@@ -254,7 +254,7 @@ footer article:first-child .fas{
             font-size: 0.6em;
             line-height: 0.5em;
        }
-       header h3{
+       header h2{
            text-align: center;
            margin-top: 0;
            font-size: 2em;
@@ -376,7 +376,7 @@ footer article:first-child .fas{
             font-size: 0.6em;
             line-height: 0.5em;
        }
-       header h3{
+       header h2{
            text-align: center;
            margin-top: 0;
            font-size: 2em;
