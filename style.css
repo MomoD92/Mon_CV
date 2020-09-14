@@ -21,7 +21,7 @@
 
 body{
     background-color: rgb(154, 176, 194);          /* couleur de fond */
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'playfair_display_scregular';      /* la police */
     display: flex;                                   /*  flexbox  */
     justify-content: center;                         /* aligner au centre */                                      
@@ -38,9 +38,20 @@ section{
     flex-direction: column;            /* disposer sur la colonne */
     justify-content: flex-start;       /* aligner au début */   
 }
+
 a{
     color: black;
     text-decoration: none;
+}
+.line1{
+    background:linear-gradient(to right, #000 95%,#fff 5%) ;
+    width: 75%;
+    margin: 1em;
+}
+.line2{
+    background:linear-gradient(to right, #000 75%,#fff 25%) ;
+    width: 75%;
+    margin: 1em;
 }
 a:hover{
     text-decoration: underline;
@@ -52,9 +63,22 @@ section p{
 ul{
     display:flex;
     flex-direction: column;
-    line-height: 0.2em;
+    line-height: 1em;
     list-style-type: none;
+    padding-left: 0px;
+}
+.sg{
     padding-left: 10px;
+}
+.comp{
+    padding-left: 7em;
+    line-height: 0.1em;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    /**justify-content: space-evenly;**/
+    padding-left: 1em;
 }
 li{
     padding-top: 10px;
@@ -73,6 +97,25 @@ section h3{
     justify-content: center;
     color: #3A75A9;
 }
+.loisirs {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: 2em;
+    margin-bottom: 2em; 
+}
+.loisirs i{
+    color: #000;
+    padding-right: 20px;
+    font-size: 2em;
+}
+
+.contact i{
+    color:#000;
+    line-height: 0.9em;
+    padding-left: 10px;
+}
 header{
     display: flex;                    /* flexbox */
     flex-direction: row;              /* disposition horizontale */
@@ -86,6 +129,7 @@ header h1{
 }
 header h2{
     padding-left: 3vw;
+    margin-bottom: 0rem;
 }
 
 header h1 span{
@@ -105,6 +149,14 @@ header div{
     width: 75%;                      /* avec une largeur */               
     background-color: #FFFFFF;
 }
+header em{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0em;
+}
+header p{
+    padding-left: 3vw;
+}
 figure{
     display: flex;                    /* flexbox */
     flex-direction: column;           /* sur la colonne */
@@ -118,8 +170,8 @@ figure img{
     margin: 30px;  
 }
 figure a{
-    height: 178px;
-    width: 170px;
+    height: 255px;
+    width: 270px;
     margin: auto;
 }
 main{
@@ -132,6 +184,8 @@ main{
     display: flex;
     align-items: baseline;
     justify-content: center;
+    margin: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 .section_milieu p{
@@ -139,12 +193,28 @@ main{
     font-size: 1.2em;
 }
 #formation,#expériences{
-    width: 87%;
+    width: 91%;
     padding-left: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+.sm{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-style: italic;
 }
 #compétences{
-    width: 87%;
+    display: flex;
+    flex-direction: column;
+    width: 91%;
     padding-left: 3vw;
+    font-family: 'Courier New', Courier, monospace;
 } 
 .section_milieu i{
     padding-right: 40px;
@@ -165,7 +235,6 @@ main{
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
-    margin-bottom: 20px;
 }
 .sectionMilieu h3{
     text-transform: uppercase;
@@ -179,16 +248,19 @@ main{
     border-bottom: 2px solid;
     border-bottom-color: #3A75A9;
     text-transform: uppercase; 
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
-.fas{
+.fas {
     color:#3A75A9;
     padding-right: 20px;
     font-size: 1em;
-
+}
+.fab {
+    padding-right: 20px;
+    font-size: 1em;
 }
 .fa-circle{
-    font-size: 0.1em;
+    font-size: 0.3em;
 }
 .fa-dot-circle{
     font-size: 0.9em;
